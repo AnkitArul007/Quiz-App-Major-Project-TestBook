@@ -22,6 +22,7 @@ const result = document.querySelector('.result-page');
 const next = document.getElementById('next');
 let timeCount = document.getElementById('timer');
 let timeLine = document.getElementById("time-line");
+let topicName = document.getElementById('topicName');
 
 //Result page Locations::
 let scoredMarks = document.getElementById('scored-marks');
@@ -100,7 +101,7 @@ let queTimer =  function (timeVlaue){
 function startCssQuiz(){
     //timer starts
     queTimer(timeValue);
-
+    topicName.innerHTML = "CSS";
     home.classList.add('hide');
     quizPage.classList.remove('hide');
     showCssQuestion(cssQueDB);
@@ -240,7 +241,7 @@ function startCssQuiz(){
 
 function startHtmlQuiz(){
     queTimer(timeValue);
-
+    topicName.innerHTML = "HTML";
     home.classList.add('hide');
     quizPage.classList.remove('hide');
     showHtmlQuestion(htmlQueDB);
@@ -364,7 +365,7 @@ function startHtmlQuiz(){
 
 function startJsQuiz(){
     queTimer(timeValue);
-
+    topicName.innerHTML = "Java Script";
     home.classList.add('hide');
     quizPage.classList.remove('hide');
     showJsQuestion(jsQueDB);
@@ -489,6 +490,7 @@ function startJsQuiz(){
 
 function startPythonQuiz(){
     queTimer(timeValue);
+    topicName.innerHTML = "Python";
     home.classList.add('hide');
     quizPage.classList.remove('hide');
     showPythonQuestion(pythonQueDB);
@@ -619,7 +621,7 @@ function startPythonQuiz(){
 
 function showCssQuestion(){
     
-
+    
     answer1.classList.remove('pointer-events');
     answer2.classList.remove('pointer-events');
     answer3.classList.remove('pointer-events');
